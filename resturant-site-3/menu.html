@@ -11,9 +11,18 @@
       type="text/css"
     />
     <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
+    <noscript>
+      <p class="noscript">Hey! Please turn on JavaScript!</p>
+    </noscript>
     <style>
       .content {
         background: rgba(0, 0, 0, 0.05);
@@ -47,18 +56,27 @@
 
     <header>
       <div class="top">
-        <span>Menu Page</span>
+        <span>Menu</span>
         <ul class="socials">
           <li><img src="icons/facebook.svg" alt="Facebook" /></li>
           <li><img src="icons/twitter.svg" alt="Twitter" /></li>
           <li><img src="icons/instagram.svg" alt="instagram" /></li>
         </ul>
       </div>
-      <h1 class="text-center">Hell's Kitchen</h1>
+      <h1 class="text-center logo">Hell's Kitchen</h1>
+      <div class="jumbotron">
+        <h2 class="text-center">
+          🎉 We're opening a new location in Grand River! 🎉
+        </h2>
+      </div>
     </header>
     <nav class="container-fluid">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-home"></i> Home</a
+          >
+        </li>
         <li class="nav-item">
           <a class="nav-link active" href="menu.html">Menu</a>
         </li>

@@ -20,7 +20,7 @@ header .top ul {
   display: flex;
 }
 
-header h1 {
+header h1.logo {
   font-family: 'Lobster', cursive;
   margin: 20px;
 }
@@ -52,4 +52,15 @@ a:visited {
 
 a:hover {
   font-weight: bold;
+}
+
+.noscript {
+  background: var(--warning);
+  text-align: center;
+  margin: auto;
+  padding: 20px 0 10px;
+}
+
+.jumbotron {
+  margin-bottom: 0;
 }
