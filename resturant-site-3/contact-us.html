@@ -4,20 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hell's Kitchen | Home</title>
+    <title>Hell's Kitchen | Contact Us</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
       type="text/css"
     />
     <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
-    <link rel="stylesheet" href="styles/contact.css" type="text/css" />
   </head>
 
   <body>
+    <style>
+      .container--contact-form form {
+        max-width: 500px;
+        margin: 50px auto;
+      }
+
+      form label {
+        text-align: right;
+      }
+
+      form label.required {
+        font-weight: bold;
+      }
+
+      form button {
+        margin: auto;
+      }
+    </style>
+
     <header>
       <div class="top">
-        <span>Home Page</span>
+        <span>Contact Us Page</span>
         <ul class="socials">
           <li><img src="icons/facebook.svg" alt="Facebook" /></li>
           <li><img src="icons/twitter.svg" alt="Twitter" /></li>
@@ -38,15 +56,19 @@
     <div class="container container--contact-form">
       <form>
         <div class="form-group row">
-          <label for="name" class="col-sm-4 col-form-label">Name:</label>
+          <label for="name" class="col-sm-4 col-form-label required"
+            >Name:</label
+          >
           <div class="col-sm-8">
-            <input type="text" class="form-control" id="name" />
+            <input type="text" class="form-control" id="name" required />
           </div>
         </div>
         <div class="form-group row">
-          <label for="email" class="col-sm-4 col-form-label">Email:</label>
+          <label for="email" class="col-sm-4 col-form-label required"
+            >Email:</label
+          >
           <div class="col-sm-8">
-            <input type="email" class="form-control" id="email" />
+            <input type="email" class="form-control" id="email" required />
           </div>
         </div>
         <div class="form-group row">
@@ -56,11 +78,11 @@
           </div>
         </div>
         <div class="form-group row">
-          <label for="reason" class="col-sm-4 col-form-label"
+          <label for="reason" class="col-sm-4 col-form-label required"
             >Reason for Inquiry:</label
           >
           <div class="col-sm-8">
-            <select id="reason" class="form-control">
+            <select id="reason" class="form-control" required>
               <option selected value="catering">Catering</option>
               <option value="private party">Private Party</option>
               <option value="feedback">Feedback</option>
@@ -112,6 +134,5 @@
       <p>5643 18th Ave, Topeka, KS, 44589</p>
       <p>845-274-8612</p>
     </footer>
-    <script src="scripts/index.js" type="text/javascript"></script>
   </body>
 </html>

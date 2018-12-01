@@ -1,4 +1,13 @@
+.restaurant-image {
+  background-image: url('../images/restaurant.jpg');
+}
+
 .content {
   width: 400px;
   margin: auto;
+}
+
+.content-wrapper {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.05);
 }

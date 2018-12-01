@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 :root {
   --light-gray: rgba(0, 0, 0, 0.2);
 }
@@ -19,6 +21,7 @@ header .top ul {
 }
 
 header h1 {
+  font-family: 'Lobster', cursive;
   margin: 20px;
 }
 
@@ -41,4 +44,12 @@ ul.socials {
 footer {
   padding: 10px;
   border-top: 1px solid var(--light-gray);
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  font-weight: bold;
 }
