@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lucky Sevens</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- starting bet form -->
+      <h1 class="text-center">Lucky Sevens</h1>
+      <form class="text-center">
+        <div class="form-row">
+          <label for="starting-bet" class="col-form-label">Starting Bet:</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input
+              type="number"
+              class="form-control"
+              id="starting-bet"
+              value="0"
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Play</button>
+      </form>
+
+      <hr />
+
+      <!-- results -->
+      <div class="invisible" id="results">
+        <h2 class="text-center">Results</h2>
+        <table class="table table-striped table-bordered">
+          <thead class="bg-info">
+            <tr>
+              <th>Starting Bet</th>
+              <td id="result--starting-bet">$0</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Total Rolls Before Going Broke</th>
+              <td id="result--total-rolls">0</td>
+            </tr>
+            <tr>
+              <th>Highest Amount Won</th>
+              <td id="result--highest-won">$0</td>
+            </tr>
+            <tr>
+              <th>Roll Count at Highest Amount Won</th>
+              <td id="result--total-rolls-at-highest-won">0</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <button id="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
