@@ -1,0 +1,12 @@
+.container--contact-form form {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+form label {
+  text-align: right;
+}
+
+form button {
+  margin: auto;
+}

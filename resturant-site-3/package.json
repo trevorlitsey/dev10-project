@@ -1,0 +1,20 @@
+{
+  "name": "resturant-site-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "octicons": "^8.1.3"
+  }
+}

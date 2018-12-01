@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hell's Kitchen | Home</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+    <link rel="stylesheet" href="styles/contact.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="top">
+        <span>Home Page</span>
+        <ul class="socials">
+          <li><img src="icons/facebook.svg" alt="Facebook" /></li>
+          <li><img src="icons/twitter.svg" alt="Twitter" /></li>
+          <li><img src="icons/instagram.svg" alt="instagram" /></li>
+        </ul>
+      </div>
+      <h1 class="text-center">Hell's Kitchen</h1>
+    </header>
+    <nav class="container-fluid">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container container--contact-form">
+      <form>
+        <div class="form-group row">
+          <label for="name" class="col-sm-4 col-form-label">Name:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="name" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-4 col-form-label">Email:</label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="email" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="phone" class="col-sm-4 col-form-label">Phone:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="phone" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="reason" class="col-sm-4 col-form-label"
+            >Reason for Inquiry:</label
+          >
+          <div class="col-sm-8">
+            <select id="reason" class="form-control">
+              <option selected value="catering">Catering</option>
+              <option value="private party">Private Party</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="additional-information" class="col-sm-4 col-form-label"
+            >Additional Information:</label
+          >
+          <div class="col-sm-8">
+            <textarea
+              class="form-control"
+              id="additional-information"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="has-been-to-restaurant" class="col-sm-4 col-form-label"
+            >Have you been to the restaurant?</label
+          >
+          <div class="col-sm-4">
+            <input type="radio" name="has-been-to-restaurant" value="no" /> No
+          </div>
+          <div class="col-sm-4">
+            <input type="radio" name="has-been-to-restaurant" value="yes" /> Yes
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="best-days-to-contact" class="col-sm-4 col-form-label"
+            >Best days to contact you:</label
+          >
+          <div class="col-sm-8">
+            <input type="checkbox" name="best-days-to-contact" value="Mon" /> M
+            <input type="checkbox" name="best-days-to-contact" value="Tue" /> T
+            <input type="checkbox" name="best-days-to-contact" value="Wed" /> W
+            <input type="checkbox" name="best-days-to-contact" value="Thur" />
+            Th
+            <input type="checkbox" name="best-days-to-contact" value="Fri" /> F
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-secondary">Send Request</button>
+        </div>
+      </form>
+    </div>
+    <footer class="container-fluid text-center">
+      <p>5643 18th Ave, Topeka, KS, 44589</p>
+      <p>845-274-8612</p>
+    </footer>
+    <script src="scripts/index.js" type="text/javascript"></script>
+  </body>
+</html>
