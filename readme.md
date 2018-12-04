@@ -4,6 +4,11 @@
 
 My Dev10 Web Development Course Project
 
+- [Lucky Sevens](https://lucky-sevens.netlify.com/)
+- [Restaurant Site 3](https://restaurant-site-3.netlify.com/)
+
+Projects can be viewed via the links above. Follow the steps below to set up a local development environment.
+
 ### Pre-requisites
 
 - [NodeJS](https://nodejs.org/en/)
@@ -17,7 +22,7 @@ cd trevor-litsey-dev10-project/lucky-sevens
 -or-
 cd trevor-litsey-dev10-project/restaurant-site-3
 
-npm i
+npm install
 
 npm start
 ```
