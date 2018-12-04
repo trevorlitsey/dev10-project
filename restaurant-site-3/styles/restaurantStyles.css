@@ -48,6 +48,7 @@ footer {
 
 a:visited {
   color: purple;
+  text-decoration: none;
 }
 
 a:hover {
